@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="full-img" id="fullImgBox">
+        <span class="close-btn" onclick="closeFullImg()">✖</span>
+        <span class="prev-btn" onclick="prevImg()">&#10094;</span>
+        <img src="images/img1.jpg" id="fullImg">
+        <span class="next-btn" onclick="nextImg()">&#10095;</span>
+    </div>
+
+    <div class="filter-buttons">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('nature')">Nature</button>
+  <button onclick="filterImages('fruits')">Fruits</button>
+  <button onclick="filterImages('car')">Car</button>
+  <button onclick="filterImages('human')">Human</button>
+  <button onclick="filterImages('urban')">Urban</button>
+</div>
+
+
+    <div class="img-gallery">
+    <img src="images/img1.jpg" data-category="fruits" onclick="openFullImg(0)">
+    <img src="images/img2.jpg" data-category="nature" onclick="openFullImg(1)">
+    <img src="images/img3.jpg" data-category="nature" onclick="openFullImg(2)">
+    <img src="images/img4.jpg" data-category="urban" onclick="openFullImg(3)">
+    <img src="images/img5.jpeg" data-category="nature" onclick="openFullImg(4)">
+    <img src="images/img6.jpg" data-category="fruits" onclick="openFullImg(5)">
+    <img src="images/img7.jpeg" data-category="nature" onclick="openFullImg(6)">
+    <img src="images/img8.jpg" data-category="car" onclick="openFullImg(7)">
+    <img src="images/img9.jpg" data-category="human" onclick="openFullImg(8)">
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
